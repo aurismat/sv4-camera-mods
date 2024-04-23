@@ -1,0 +1,423 @@
+From 1a9d7af28802403d78759e98faaf5e1500cd4c4d Mon Sep 17 00:00:00 2001
+From: aurismat <aur.mat729@gmail.com>
+Date: Sat, 28 Oct 2023 13:59:14 +0300
+Subject: [PATCH] cameras: remove noise
+
+won't work without vidscreen-simple.cg fix, add it or perish
+---
+ Resources/Materials/Cameras.material | 148 +++++++++++++--------------
+ 1 file changed, 74 insertions(+), 74 deletions(-)
+
+diff --git a/Resources/Materials/Cameras.material b/Resources/Materials/Cameras.material
+index 6585c9c..2232979 100644
+--- a/Resources/Materials/Cameras.material
++++ b/Resources/Materials/Cameras.material
+@@ -169,8 +169,8 @@ material camera1screen1
+ 			texture_unit 0
+ 			{
+                                 // Noise modulation texture
+-				anim_texture noise.png 4 0.5
+-				filtering none
++				// anim_texture noise.png 4 0.5
++				// filtering none
+ 			}
+ 			texture_unit 1
+ 			{
+@@ -225,8 +225,8 @@ material camera1screen2
+ 			texture_unit 0
+ 			{
+                                 // Noise modulation texture
+-				anim_texture noise.png 4 0.5
+-				filtering none
++				// anim_texture noise.png 4 0.5
++				// filtering none
+ 			}
+ 			texture_unit 1
+ 			{
+@@ -287,8 +287,8 @@ material camera1screen3
+ 			texture_unit 0
+ 			{
+                                 // Noise modulation texture
+-				anim_texture noise.png 4 0.5
+-				filtering none
++				// anim_texture noise.png 4 0.5
++				// filtering none
+ 			}
+ 			texture_unit 1
+ 			{
+@@ -297,7 +297,7 @@ material camera1screen3
+ 				filtering anisotropic anisotropic linear
+ 
+-//				anim_texture noise.png 4 0.02
+-//				filtering none
++				// anim_texture noise.png 4 0.02
++				// filtering none
+ 
+ 			}
+ 			texture_unit 2
+@@ -347,8 +347,8 @@ material camera1screen4
+ 			texture_unit 0
+ 			{
+                                 // Noise modulation texture
+-				anim_texture noise.png 4 0.5
+-				filtering none
++				// anim_texture noise.png 4 0.5
++				// filtering none
+ 			}
+ 			texture_unit 1
+ 			{
+@@ -403,8 +403,8 @@ material camera1screen5
+ 			texture_unit 0
+ 			{
+                                 // Noise modulation texture
+-				anim_texture noise.png 4 0.5
+-				filtering none
++				// anim_texture noise.png 4 0.5
++				// filtering none
+ 			}
+ 			texture_unit 1
+ 			{
+@@ -460,8 +460,8 @@ material camera1screen6
+ 			texture_unit 0
+ 			{
+                                 // Noise modulation texture
+-				anim_texture noise.png 4 0.5
+-				filtering none
++				// anim_texture noise.png 4 0.5
++				// filtering none
+ 			}
+ 			texture_unit 1
+ 			{
+@@ -517,8 +517,8 @@ material camera2screen1
+ 			texture_unit 0
+ 			{
+                                 // Noise modulation texture
+-				anim_texture noise.png 4 0.5
+-				filtering none
++				// anim_texture noise.png 4 0.5
++				// filtering none
+ 			}
+ 			texture_unit 1
+ 			{
+@@ -573,8 +573,8 @@ material camera2screen2
+ 			texture_unit 0
+ 			{
+                                 // Noise modulation texture
+-				anim_texture noise.png 4 0.5
+-				filtering none
++				// anim_texture noise.png 4 0.5
++				// filtering none
+ 			}
+ 			texture_unit 1
+ 			{
+@@ -629,8 +629,8 @@ material camera2screen3
+ 			texture_unit 0
+ 			{
+                                 // Noise modulation texture
+-				anim_texture noise.png 4 0.5
+-				filtering none
++				// anim_texture noise.png 4 0.5
++				// filtering none
+ 			}
+ 			texture_unit 1
+ 			{
+@@ -685,8 +685,8 @@ material camera2screen4
+ 			texture_unit 0
+ 			{
+                                 // Noise modulation texture
+-				anim_texture noise.png 4 0.5
+-				filtering none
++				// anim_texture noise.png 4 0.5
++				// filtering none
+ 			}
+ 			texture_unit 1
+ 			{
+@@ -741,8 +741,8 @@ material camera2screen5
+ 			texture_unit 0
+ 			{
+                                 // Noise modulation texture
+-				anim_texture noise.png 4 0.5
+-				filtering none
++				// anim_texture noise.png 4 0.5
++				// filtering none
+ 			}
+ 			texture_unit 1
+ 			{
+@@ -798,8 +798,8 @@ material camera2screen6
+ 			texture_unit 0
+ 			{
+                                 // Noise modulation texture
+-				anim_texture noise.png 4 0.5
+-				filtering none
++				// anim_texture noise.png 4 0.5
++				// filtering none
+ 			}
+ 			texture_unit 1
+ 			{
+@@ -855,8 +855,8 @@ material camera3screen1
+ 			texture_unit 0
+ 			{
+                                 // Noise modulation texture
+-				anim_texture noise.png 4 0.5
+-				filtering none
++				// anim_texture noise.png 4 0.5
++				// filtering none
+ 			}
+ 			texture_unit 1
+ 			{
+@@ -911,8 +911,8 @@ material camera3screen2
+ 			texture_unit 0
+ 			{
+                                 // Noise modulation texture
+-				anim_texture noise.png 4 0.5
+-				filtering none
++				// anim_texture noise.png 4 0.5
++				// filtering none
+ 			}
+ 			texture_unit 1
+ 			{
+@@ -967,8 +967,8 @@ material camera3screen3
+ 			texture_unit 0
+ 			{
+                                 // Noise modulation texture
+-				anim_texture noise.png 4 0.5
+-				filtering none
++				// anim_texture noise.png 4 0.5
++				// filtering none
+ 			}
+ 			texture_unit 1
+ 			{
+@@ -1023,8 +1023,8 @@ material camera3screen4
+ 			texture_unit 0
+ 			{
+                                 // Noise modulation texture
+-				anim_texture noise.png 4 0.5
+-				filtering none
++				// anim_texture noise.png 4 0.5
++				// filtering none
+ 			}
+ 			texture_unit 1
+ 			{
+@@ -1079,8 +1079,8 @@ material camera3screen5
+ 			texture_unit 0
+ 			{
+                                 // Noise modulation texture
+-				anim_texture noise.png 4 0.5
+-				filtering none
++				// anim_texture noise.png 4 0.5
++				// filtering none
+ 			}
+ 			texture_unit 1
+ 			{
+@@ -1135,8 +1135,8 @@ material camera3screen6
+ 			texture_unit 0
+ 			{
+                                 // Noise modulation texture
+-				anim_texture noise.png 4 0.5
+-				filtering none
++				// anim_texture noise.png 4 0.5
++				// filtering none
+ 			}
+ 			texture_unit 1
+ 			{
+@@ -1191,8 +1191,8 @@ material camera4screen1
+ 			texture_unit 0
+ 			{
+                                 // Noise modulation texture
+-				anim_texture noise.png 4 0.5
+-				filtering none
++				// anim_texture noise.png 4 0.5
++				// filtering none
+ 			}
+ 			texture_unit 1
+ 			{
+@@ -1247,8 +1247,8 @@ material camera4screen2
+ 			texture_unit 0
+ 			{
+                                 // Noise modulation texture
+-				anim_texture noise.png 4 0.5
+-				filtering none
++				// anim_texture noise.png 4 0.5
++				// filtering none
+ 			}
+ 			texture_unit 1
+ 			{
+@@ -1303,8 +1303,8 @@ material camera4screen3
+ 			texture_unit 0
+ 			{
+                                 // Noise modulation texture
+-				anim_texture noise.png 4 0.5
+-				filtering none
++				// anim_texture noise.png 4 0.5
++				// filtering none
+ 			}
+ 			texture_unit 1
+ 			{
+@@ -1359,8 +1359,8 @@ material camera4screen4
+ 			texture_unit 0
+ 			{
+                                 // Noise modulation texture
+-				anim_texture noise.png 4 0.5
+-				filtering none
++				// anim_texture noise.png 4 0.5
++				// filtering none
+ 			}
+ 			texture_unit 1
+ 			{
+@@ -1415,8 +1415,8 @@ material camera4screen5
+ 			texture_unit 0
+ 			{
+                                 // Noise modulation texture
+-				anim_texture noise.png 4 0.5
+-				filtering none
++				// anim_texture noise.png 4 0.5
++				// filtering none
+ 			}
+ 			texture_unit 1
+ 			{
+@@ -1471,8 +1471,8 @@ material camera4screen6
+ 			texture_unit 0
+ 			{
+                                 // Noise modulation texture
+-				anim_texture noise.png 4 0.5
+-				filtering none
++				// anim_texture noise.png 4 0.5
++				// filtering none
+ 			}
+ 			texture_unit 1
+ 			{
+@@ -1528,8 +1528,8 @@ material camera5screen1
+ 			texture_unit 0
+ 			{
+                                 // Noise modulation texture
+-				anim_texture noise.png 4 0.5
+-				filtering none
++				// anim_texture noise.png 4 0.5
++				// filtering none
+ 			}
+ 			texture_unit 1
+ 			{
+@@ -1584,8 +1584,8 @@ material camera5screen2
+ 			texture_unit 0
+ 			{
+                                 // Noise modulation texture
+-				anim_texture noise.png 4 0.5
+-				filtering none
++				// anim_texture noise.png 4 0.5
++				// filtering none
+ 			}
+ 			texture_unit 1
+ 			{
+@@ -1640,8 +1640,8 @@ material camera5screen3
+ 			texture_unit 0
+ 			{
+                                 // Noise modulation texture
+-				anim_texture noise.png 4 0.5
+-				filtering none
++				// anim_texture noise.png 4 0.5
++				// filtering none
+ 			}
+ 			texture_unit 1
+ 			{
+@@ -1696,8 +1696,8 @@ material camera5screen4
+ 			texture_unit 0
+ 			{
+                                 // Noise modulation texture
+-				anim_texture noise.png 4 0.5
+-				filtering none
++				// anim_texture noise.png 4 0.5
++				// filtering none
+ 			}
+ 			texture_unit 1
+ 			{
+@@ -1752,8 +1752,8 @@ material camera5screen5
+ 			texture_unit 0
+ 			{
+                                 // Noise modulation texture
+-				anim_texture noise.png 4 0.5
+-				filtering none
++				// anim_texture noise.png 4 0.5
++				// filtering none
+ 			}
+ 			texture_unit 1
+ 			{
+@@ -1808,8 +1808,8 @@ material camera5screen6
+ 			texture_unit 0
+ 			{
+                                 // Noise modulation texture
+-				anim_texture noise.png 4 0.5
+-				filtering none
++				// anim_texture noise.png 4 0.5
++				// filtering none
+ 			}
+ 			texture_unit 1
+ 			{
+@@ -1865,8 +1865,8 @@ material camera6screen1
+ 			texture_unit 0
+ 			{
+                                 // Noise modulation texture
+-				anim_texture noise.png 4 0.5
+-				filtering none
++				// anim_texture noise.png 4 0.5
++				// filtering none
+ 			}
+ 			texture_unit 1
+ 			{
+@@ -1921,8 +1921,8 @@ material camera6screen2
+ 			texture_unit 0
+ 			{
+                                 // Noise modulation texture
+-				anim_texture noise.png 4 0.5
+-				filtering none
++				// anim_texture noise.png 4 0.5
++				// filtering none
+ 			}
+ 			texture_unit 1
+ 			{
+@@ -1977,8 +1977,8 @@ material camera6screen3
+ 			texture_unit 0
+ 			{
+                                 // Noise modulation texture
+-				anim_texture noise.png 4 0.5
+-				filtering none
++				// anim_texture noise.png 4 0.5
++				// filtering none
+ 			}
+ 			texture_unit 1
+ 			{
+@@ -2033,8 +2033,8 @@ material camera6screen4
+ 			texture_unit 0
+ 			{
+                                 // Noise modulation texture
+-				anim_texture noise.png 4 0.5
+-				filtering none
++				// anim_texture noise.png 4 0.5
++				// filtering none
+ 			}
+ 			texture_unit 1
+ 			{
+@@ -2089,8 +2089,8 @@ material camera6screen5
+ 			texture_unit 0
+ 			{
+                                 // Noise modulation texture
+-				anim_texture noise.png 4 0.5
+-				filtering none
++				// anim_texture noise.png 4 0.5
++				// filtering none
+ 			}
+ 			texture_unit 1
+ 			{
+@@ -2145,8 +2145,8 @@ material camera6screen6
+ 			texture_unit 0
+ 			{
+                                 // Noise modulation texture
+-				anim_texture noise.png 4 0.5
+-				filtering none
++				// anim_texture noise.png 4 0.5
++				// filtering none
+ 			}
+ 			texture_unit 1
+ 			{
+-- 
+2.37.1.windows.1
+

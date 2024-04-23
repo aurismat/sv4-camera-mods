@@ -1,0 +1,412 @@
+From ffc0e44685abab9108ebdd22f2954ff6072e132e Mon Sep 17 00:00:00 2001
+From: aurismat <aur.mat729@gmail.com>
+Date: Sat, 28 Oct 2023 16:46:52 +0300
+Subject: [PATCH] cameras: disable vignette
+
+---
+ Resources/Materials/Cameras.material | 144 +++++++++++++--------------
+ 1 file changed, 72 insertions(+), 72 deletions(-)
+
+diff --git a/Resources/Materials/Cameras.material b/Resources/Materials/Cameras.material
+index 6585c9c..b807664 100644
+--- a/Resources/Materials/Cameras.material
++++ b/Resources/Materials/Cameras.material
+@@ -181,8 +181,8 @@ material camera1screen1
+ 			texture_unit 2
+ 			{
+                                 // Vignette down the modulation corners.
+-				texture vignette.png 2d
+-				filtering none
++				// texture vignette.png 2d
++				// filtering none
+ 			}
+ 			texture_unit 3
+ 			{
+@@ -237,8 +237,8 @@ material camera1screen2
+ 			texture_unit 2
+ 			{
+                                 // Vignette down the modulation corners.
+-				texture vignette.png 2d
+-				filtering none
++				// texture vignette.png 2d
++				// filtering none
+ 			}
+ 			texture_unit 3
+ 			{
+@@ -303,8 +303,8 @@ material camera1screen3
+ 			texture_unit 2
+ 			{
+                                 // Vignette down the modulation corners.
+-				texture vignette.png 2d
+-				filtering none
++				// texture vignette.png 2d
++				// filtering none
+ 			}
+ 			texture_unit 3
+ 			{
+@@ -359,8 +359,8 @@ material camera1screen4
+ 			texture_unit 2
+ 			{
+                                 // Vignette down the modulation corners.
+-				texture vignette.png 2d
+-				filtering none
++				// texture vignette.png 2d
++				// filtering none
+ 			}
+ 			texture_unit 3
+ 			{
+@@ -415,8 +415,8 @@ material camera1screen5
+ 			texture_unit 2
+ 			{
+                                 // Vignette down the modulation corners.
+-				texture vignette.png 2d
+-				filtering none
++				// texture vignette.png 2d
++				// filtering none
+ 			}
+ 			texture_unit 3
+ 			{
+@@ -472,8 +472,8 @@ material camera1screen6
+ 			texture_unit 2
+ 			{
+                                 // Vignette down the modulation corners.
+-				texture vignette.png 2d
+-				filtering none
++				// texture vignette.png 2d
++				// filtering none
+ 			}
+ 
+ 			texture_unit 3
+@@ -529,8 +529,8 @@ material camera2screen1
+ 			texture_unit 2
+ 			{
+                                 // Vignette down the modulation corners.
+-				texture vignette.png 2d
+-				filtering none
++				// texture vignette.png 2d
++				// filtering none
+ 			}
+ 			texture_unit 3
+ 			{
+@@ -585,8 +585,8 @@ material camera2screen2
+ 			texture_unit 2
+ 			{
+                                 // Vignette down the modulation corners.
+-				texture vignette.png 2d
+-				filtering none
++				// texture vignette.png 2d
++				// filtering none
+ 			}
+ 			texture_unit 3
+ 			{
+@@ -641,8 +641,8 @@ material camera2screen3
+ 			texture_unit 2
+ 			{
+                                 // Vignette down the modulation corners.
+-				texture vignette.png 2d
+-				filtering none
++				// texture vignette.png 2d
++				// filtering none
+ 			}
+ 			texture_unit 3
+ 			{
+@@ -697,8 +697,8 @@ material camera2screen4
+ 			texture_unit 2
+ 			{
+                                 // Vignette down the modulation corners.
+-				texture vignette.png 2d
+-				filtering none
++				// texture vignette.png 2d
++				// filtering none
+ 			}
+ 			texture_unit 3
+ 			{
+@@ -753,8 +753,8 @@ material camera2screen5
+ 			texture_unit 2
+ 			{
+                                 // Vignette down the modulation corners.
+-				texture vignette.png 2d
+-				filtering none
++				// texture vignette.png 2d
++				// filtering none
+ 			}
+ 			texture_unit 3
+ 			{
+@@ -810,8 +810,8 @@ material camera2screen6
+ 			texture_unit 2
+ 			{
+                                 // Vignette down the modulation corners.
+-				texture vignette.png 2d
+-				filtering none
++				// texture vignette.png 2d
++				// filtering none
+ 			}
+ 			texture_unit 3
+ 			{
+@@ -867,8 +867,8 @@ material camera3screen1
+ 			texture_unit 2
+ 			{
+                                 // Vignette down the modulation corners.
+-				texture vignette.png 2d
+-				filtering none
++				// texture vignette.png 2d
++				// filtering none
+ 			}
+ 			texture_unit 3
+ 			{
+@@ -923,8 +923,8 @@ material camera3screen2
+ 			texture_unit 2
+ 			{
+                                 // Vignette down the modulation corners.
+-				texture vignette.png 2d
+-				filtering none
++				// texture vignette.png 2d
++				// filtering none
+ 			}
+ 			texture_unit 3
+ 			{
+@@ -979,8 +979,8 @@ material camera3screen3
+ 			texture_unit 2
+ 			{
+                                 // Vignette down the modulation corners.
+-				texture vignette.png 2d
+-				filtering none
++				// texture vignette.png 2d
++				// filtering none
+ 			}
+ 			texture_unit 3
+ 			{
+@@ -1035,8 +1035,8 @@ material camera3screen4
+ 			texture_unit 2
+ 			{
+                                 // Vignette down the modulation corners.
+-				texture vignette.png 2d
+-				filtering none
++				// texture vignette.png 2d
++				// filtering none
+ 			}
+ 			texture_unit 3
+ 			{
+@@ -1091,8 +1091,8 @@ material camera3screen5
+ 			texture_unit 2
+ 			{
+                                 // Vignette down the modulation corners.
+-				texture vignette.png 2d
+-				filtering none
++				// texture vignette.png 2d
++				// filtering none
+ 			}
+ 			texture_unit 3
+ 			{
+@@ -1147,8 +1147,8 @@ material camera3screen6
+ 			texture_unit 2
+ 			{
+                                 // Vignette down the modulation corners.
+-				texture vignette.png 2d
+-				filtering none
++				// texture vignette.png 2d
++				// filtering none
+ 			}
+ 			texture_unit 3
+ 			{
+@@ -1203,8 +1203,8 @@ material camera4screen1
+ 			texture_unit 2
+ 			{
+                                 // Vignette down the modulation corners.
+-				texture vignette.png 2d
+-				filtering none
++				// texture vignette.png 2d
++				// filtering none
+ 			}
+ 			texture_unit 3
+ 			{
+@@ -1259,8 +1259,8 @@ material camera4screen2
+ 			texture_unit 2
+ 			{
+                                 // Vignette down the modulation corners.
+-				texture vignette.png 2d
+-				filtering none
++				// texture vignette.png 2d
++				// filtering none
+ 			}
+ 			texture_unit 3
+ 			{
+@@ -1315,8 +1315,8 @@ material camera4screen3
+ 			texture_unit 2
+ 			{
+                                 // Vignette down the modulation corners.
+-				texture vignette.png 2d
+-				filtering none
++				// texture vignette.png 2d
++				// filtering none
+ 			}
+ 			texture_unit 3
+ 			{
+@@ -1371,8 +1371,8 @@ material camera4screen4
+ 			texture_unit 2
+ 			{
+                                 // Vignette down the modulation corners.
+-				texture vignette.png 2d
+-				filtering none
++				// texture vignette.png 2d
++				// filtering none
+ 			}
+ 			texture_unit 3
+ 			{
+@@ -1427,8 +1427,8 @@ material camera4screen5
+ 			texture_unit 2
+ 			{
+                                 // Vignette down the modulation corners.
+-				texture vignette.png 2d
+-				filtering none
++				// texture vignette.png 2d
++				// filtering none
+ 			}
+ 			texture_unit 3
+ 			{
+@@ -1483,8 +1483,8 @@ material camera4screen6
+ 			texture_unit 2
+ 			{
+                                 // Vignette down the modulation corners.
+-				texture vignette.png 2d
+-				filtering none
++				// texture vignette.png 2d
++				// filtering none
+ 			}
+ 			texture_unit 3
+ 			{
+@@ -1540,8 +1540,8 @@ material camera5screen1
+ 			texture_unit 2
+ 			{
+                                 // Vignette down the modulation corners.
+-				texture vignette.png 2d
+-				filtering none
++				// texture vignette.png 2d
++				// filtering none
+ 			}
+ 			texture_unit 3
+ 			{
+@@ -1596,8 +1596,8 @@ material camera5screen2
+ 			texture_unit 2
+ 			{
+                                 // Vignette down the modulation corners.
+-				texture vignette.png 2d
+-				filtering none
++				// texture vignette.png 2d
++				// filtering none
+ 			}
+ 			texture_unit 3
+ 			{
+@@ -1652,8 +1652,8 @@ material camera5screen3
+ 			texture_unit 2
+ 			{
+                                 // Vignette down the modulation corners.
+-				texture vignette.png 2d
+-				filtering none
++				// texture vignette.png 2d
++				// filtering none
+ 			}
+ 			texture_unit 3
+ 			{
+@@ -1708,8 +1708,8 @@ material camera5screen4
+ 			texture_unit 2
+ 			{
+                                 // Vignette down the modulation corners.
+-				texture vignette.png 2d
+-				filtering none
++				// texture vignette.png 2d
++				// filtering none
+ 			}
+ 			texture_unit 3
+ 			{
+@@ -1764,8 +1764,8 @@ material camera5screen5
+ 			texture_unit 2
+ 			{
+                                 // Vignette down the modulation corners.
+-				texture vignette.png 2d
+-				filtering none
++				// texture vignette.png 2d
++				// filtering none
+ 			}
+ 			texture_unit 3
+ 			{
+@@ -1820,8 +1820,8 @@ material camera5screen6
+ 			texture_unit 2
+ 			{
+                                 // Vignette down the modulation corners.
+-				texture vignette.png 2d
+-				filtering none
++				// texture vignette.png 2d
++				// filtering none
+ 			}
+ 			texture_unit 3
+ 			{
+@@ -1877,8 +1877,8 @@ material camera6screen1
+ 			texture_unit 2
+ 			{
+                                 // Vignette down the modulation corners.
+-				texture vignette.png 2d
+-				filtering none
++				// texture vignette.png 2d
++				// filtering none
+ 			}
+ 			texture_unit 3
+ 			{
+@@ -1933,8 +1933,8 @@ material camera6screen2
+ 			texture_unit 2
+ 			{
+                                 // Vignette down the modulation corners.
+-				texture vignette.png 2d
+-				filtering none
++				// texture vignette.png 2d
++				// filtering none
+ 			}
+ 			texture_unit 3
+ 			{
+@@ -1989,8 +1989,8 @@ material camera6screen3
+ 			texture_unit 2
+ 			{
+                                 // Vignette down the modulation corners.
+-				texture vignette.png 2d
+-				filtering none
++				// texture vignette.png 2d
++				// filtering none
+ 			}
+ 			texture_unit 3
+ 			{
+@@ -2045,8 +2045,8 @@ material camera6screen4
+ 			texture_unit 2
+ 			{
+                                 // Vignette down the modulation corners.
+-				texture vignette.png 2d
+-				filtering none
++				// texture vignette.png 2d
++				// filtering none
+ 			}
+ 			texture_unit 3
+ 			{
+@@ -2101,8 +2101,8 @@ material camera6screen5
+ 			texture_unit 2
+ 			{
+                                 // Vignette down the modulation corners.
+-				texture vignette.png 2d
+-				filtering none
++				// texture vignette.png 2d
++				// filtering none
+ 			}
+ 			texture_unit 3
+ 			{
+@@ -2157,8 +2157,8 @@ material camera6screen6
+ 			texture_unit 2
+ 			{
+                                 // Vignette down the modulation corners.
+-				texture vignette.png 2d
+-				filtering none
++				// texture vignette.png 2d
++				// filtering none
+ 			}
+ 			texture_unit 3
+ 			{
+-- 
+2.37.1.windows.1
+

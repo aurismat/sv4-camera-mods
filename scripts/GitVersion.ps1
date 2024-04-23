@@ -1,0 +1,1 @@
+﻿git --version > $NULL; echo $?

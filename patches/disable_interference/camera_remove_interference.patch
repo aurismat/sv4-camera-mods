@@ -1,0 +1,412 @@
+From 505364992e5a2b3f584097a0b8bb1836f2faadfb Mon Sep 17 00:00:00 2001
+From: aurismat <aur.mat729@gmail.com>
+Date: Sat, 28 Oct 2023 14:31:17 +0300
+Subject: [PATCH] cameras: disable interference bars
+
+---
+ Resources/Materials/Cameras.material | 144 +++++++++++++--------------
+ 1 file changed, 72 insertions(+), 72 deletions(-)
+
+diff --git a/Resources/Materials/Cameras.material b/Resources/Materials/Cameras.material
+index 6585c9c..70771ac 100644
+--- a/Resources/Materials/Cameras.material
++++ b/Resources/Materials/Cameras.material
+@@ -187,8 +187,8 @@ material camera1screen1
+ 			texture_unit 3
+ 			{
+ 				// Rolling interference bars
+-				texture interference-bar.png 2d
+-				filtering linear linear none
++				// texture interference-bar.png 2d
++				// filtering linear linear none
+ 			}
+ 			texture_unit 4
+ 			{
+@@ -243,8 +243,8 @@ material camera1screen2
+ 			texture_unit 3
+ 			{
+ 				// Rolling interference bars
+-				texture interference-bar.png 2d
+-				filtering linear linear none
++				// texture interference-bar.png 2d
++				// filtering linear linear none
+ 			}
+ 			texture_unit 4
+ 			{
+@@ -309,8 +309,8 @@ material camera1screen3
+ 			texture_unit 3
+ 			{
+ 				// Rolling interference bars
+-				texture interference-bar.png 2d
+-				filtering linear linear none
++				// texture interference-bar.png 2d
++				// filtering linear linear none
+ 			}
+ 			texture_unit 4
+ 			{
+@@ -365,8 +365,8 @@ material camera1screen4
+ 			texture_unit 3
+ 			{
+ 				// Rolling interference bars
+-				texture interference-bar.png 2d
+-				filtering linear linear none
++				// texture interference-bar.png 2d
++				// filtering linear linear none
+ 			}
+ 			texture_unit 4
+ 			{
+@@ -421,8 +421,8 @@ material camera1screen5
+ 			texture_unit 3
+ 			{
+ 				// Rolling interference bars
+-				texture interference-bar.png 2d
+-				filtering linear linear none
++				// texture interference-bar.png 2d
++				// filtering linear linear none
+ 			}
+ 			texture_unit 4
+ 			{
+@@ -479,8 +479,8 @@ material camera1screen6
+ 			texture_unit 3
+ 			{
+ 				// Rolling interference bars
+-				texture interference-bar.png 2d
+-				filtering linear linear none
++				// texture interference-bar.png 2d
++				// filtering linear linear none
+ 			}
+ 			texture_unit 4
+ 			{
+@@ -535,8 +535,8 @@ material camera2screen1
+ 			texture_unit 3
+ 			{
+ 				// Rolling interference bars
+-				texture interference-bar.png 2d
+-				filtering linear linear none
++				// texture interference-bar.png 2d
++				// filtering linear linear none
+ 			}
+ 			texture_unit 4
+ 			{
+@@ -591,8 +591,8 @@ material camera2screen2
+ 			texture_unit 3
+ 			{
+ 				// Rolling interference bars
+-				texture interference-bar.png 2d
+-				filtering linear linear none
++				// texture interference-bar.png 2d
++				// filtering linear linear none
+ 			}
+ 			texture_unit 4
+ 			{
+@@ -647,8 +647,8 @@ material camera2screen3
+ 			texture_unit 3
+ 			{
+ 				// Rolling interference bars
+-				texture interference-bar.png 2d
+-				filtering linear linear none
++				// texture interference-bar.png 2d
++				// filtering linear linear none
+ 			}
+ 			texture_unit 4
+ 			{
+@@ -703,8 +703,8 @@ material camera2screen4
+ 			texture_unit 3
+ 			{
+ 				// Rolling interference bars
+-				texture interference-bar.png 2d
+-				filtering linear linear none
++				// texture interference-bar.png 2d
++				// filtering linear linear none
+ 			}
+ 			texture_unit 4
+ 			{
+@@ -759,8 +759,8 @@ material camera2screen5
+ 			texture_unit 3
+ 			{
+ 				// Rolling interference bars
+-				texture interference-bar.png 2d
+-				filtering linear linear none
++				// texture interference-bar.png 2d
++				// filtering linear linear none
+ 			}
+ 			texture_unit 4
+ 			{
+@@ -816,8 +816,8 @@ material camera2screen6
+ 			texture_unit 3
+ 			{
+ 				// Rolling interference bars
+-				texture interference-bar.png 2d
+-				filtering linear linear none
++				// texture interference-bar.png 2d
++				// filtering linear linear none
+ 			}
+ 			texture_unit 4
+ 			{
+@@ -873,8 +873,8 @@ material camera3screen1
+ 			texture_unit 3
+ 			{
+ 				// Rolling interference bars
+-				texture interference-bar.png 2d
+-				filtering linear linear none
++				// texture interference-bar.png 2d
++				// filtering linear linear none
+ 			}
+ 			texture_unit 4
+ 			{
+@@ -929,8 +929,8 @@ material camera3screen2
+ 			texture_unit 3
+ 			{
+ 				// Rolling interference bars
+-				texture interference-bar.png 2d
+-				filtering linear linear none
++				// texture interference-bar.png 2d
++				// filtering linear linear none
+ 			}
+ 			texture_unit 4
+ 			{
+@@ -985,8 +985,8 @@ material camera3screen3
+ 			texture_unit 3
+ 			{
+ 				// Rolling interference bars
+-				texture interference-bar.png 2d
+-				filtering linear linear none
++				// texture interference-bar.png 2d
++				// filtering linear linear none
+ 			}
+ 			texture_unit 4
+ 			{
+@@ -1041,8 +1041,8 @@ material camera3screen4
+ 			texture_unit 3
+ 			{
+ 				// Rolling interference bars
+-				texture interference-bar.png 2d
+-				filtering linear linear none
++				// texture interference-bar.png 2d
++				// filtering linear linear none
+ 			}
+ 			texture_unit 4
+ 			{
+@@ -1097,8 +1097,8 @@ material camera3screen5
+ 			texture_unit 3
+ 			{
+ 				// Rolling interference bars
+-				texture interference-bar.png 2d
+-				filtering linear linear none
++				// texture interference-bar.png 2d
++				// filtering linear linear none
+ 			}
+ 			texture_unit 4
+ 			{
+@@ -1153,8 +1153,8 @@ material camera3screen6
+ 			texture_unit 3
+ 			{
+ 				// Rolling interference bars
+-				texture interference-bar.png 2d
+-				filtering linear linear none
++				// texture interference-bar.png 2d
++				// filtering linear linear none
+ 			}
+ 			texture_unit 4
+ 			{
+@@ -1209,8 +1209,8 @@ material camera4screen1
+ 			texture_unit 3
+ 			{
+ 				// Rolling interference bars
+-				texture interference-bar.png 2d
+-				filtering linear linear none
++				// texture interference-bar.png 2d
++				// filtering linear linear none
+ 			}
+ 			texture_unit 4
+ 			{
+@@ -1265,8 +1265,8 @@ material camera4screen2
+ 			texture_unit 3
+ 			{
+ 				// Rolling interference bars
+-				texture interference-bar.png 2d
+-				filtering linear linear none
++				// texture interference-bar.png 2d
++				// filtering linear linear none
+ 			}
+ 			texture_unit 4
+ 			{
+@@ -1321,8 +1321,8 @@ material camera4screen3
+ 			texture_unit 3
+ 			{
+ 				// Rolling interference bars
+-				texture interference-bar.png 2d
+-				filtering linear linear none
++				// texture interference-bar.png 2d
++				// filtering linear linear none
+ 			}
+ 			texture_unit 4
+ 			{
+@@ -1377,8 +1377,8 @@ material camera4screen4
+ 			texture_unit 3
+ 			{
+ 				// Rolling interference bars
+-				texture interference-bar.png 2d
+-				filtering linear linear none
++				// texture interference-bar.png 2d
++				// filtering linear linear none
+ 			}
+ 			texture_unit 4
+ 			{
+@@ -1433,8 +1433,8 @@ material camera4screen5
+ 			texture_unit 3
+ 			{
+ 				// Rolling interference bars
+-				texture interference-bar.png 2d
+-				filtering linear linear none
++				// texture interference-bar.png 2d
++				// filtering linear linear none
+ 			}
+ 			texture_unit 4
+ 			{
+@@ -1489,8 +1489,8 @@ material camera4screen6
+ 			texture_unit 3
+ 			{
+ 				// Rolling interference bars
+-				texture interference-bar.png 2d
+-				filtering linear linear none
++				// texture interference-bar.png 2d
++				// filtering linear linear none
+ 			}
+ 			texture_unit 4
+ 			{
+@@ -1546,8 +1546,8 @@ material camera5screen1
+ 			texture_unit 3
+ 			{
+ 				// Rolling interference bars
+-				texture interference-bar.png 2d
+-				filtering linear linear none
++				// texture interference-bar.png 2d
++				// filtering linear linear none
+ 			}
+ 			texture_unit 4
+ 			{
+@@ -1602,8 +1602,8 @@ material camera5screen2
+ 			texture_unit 3
+ 			{
+ 				// Rolling interference bars
+-				texture interference-bar.png 2d
+-				filtering linear linear none
++				// texture interference-bar.png 2d
++				// filtering linear linear none
+ 			}
+ 			texture_unit 4
+ 			{
+@@ -1658,8 +1658,8 @@ material camera5screen3
+ 			texture_unit 3
+ 			{
+ 				// Rolling interference bars
+-				texture interference-bar.png 2d
+-				filtering linear linear none
++				// texture interference-bar.png 2d
++				// filtering linear linear none
+ 			}
+ 			texture_unit 4
+ 			{
+@@ -1714,8 +1714,8 @@ material camera5screen4
+ 			texture_unit 3
+ 			{
+ 				// Rolling interference bars
+-				texture interference-bar.png 2d
+-				filtering linear linear none
++				// texture interference-bar.png 2d
++				// filtering linear linear none
+ 			}
+ 			texture_unit 4
+ 			{
+@@ -1770,8 +1770,8 @@ material camera5screen5
+ 			texture_unit 3
+ 			{
+ 				// Rolling interference bars
+-				texture interference-bar.png 2d
+-				filtering linear linear none
++				// texture interference-bar.png 2d
++				// filtering linear linear none
+ 			}
+ 			texture_unit 4
+ 			{
+@@ -1826,8 +1826,8 @@ material camera5screen6
+ 			texture_unit 3
+ 			{
+ 				// Rolling interference bars
+-				texture interference-bar.png 2d
+-				filtering linear linear none
++				// texture interference-bar.png 2d
++				// filtering linear linear none
+ 			}
+ 			texture_unit 4
+ 			{
+@@ -1883,8 +1883,8 @@ material camera6screen1
+ 			texture_unit 3
+ 			{
+ 				// Rolling interference bars
+-				texture interference-bar.png 2d
+-				filtering linear linear none
++				// texture interference-bar.png 2d
++				// filtering linear linear none
+ 			}
+ 			texture_unit 4
+ 			{
+@@ -1939,8 +1939,8 @@ material camera6screen2
+ 			texture_unit 3
+ 			{
+ 				// Rolling interference bars
+-				texture interference-bar.png 2d
+-				filtering linear linear none
++				// texture interference-bar.png 2d
++				// filtering linear linear none
+ 			}
+ 			texture_unit 4
+ 			{
+@@ -1995,8 +1995,8 @@ material camera6screen3
+ 			texture_unit 3
+ 			{
+ 				// Rolling interference bars
+-				texture interference-bar.png 2d
+-				filtering linear linear none
++				// texture interference-bar.png 2d
++				// filtering linear linear none
+ 			}
+ 			texture_unit 4
+ 			{
+@@ -2051,8 +2051,8 @@ material camera6screen4
+ 			texture_unit 3
+ 			{
+ 				// Rolling interference bars
+-				texture interference-bar.png 2d
+-				filtering linear linear none
++				// texture interference-bar.png 2d
++				// filtering linear linear none
+ 			}
+ 			texture_unit 4
+ 			{
+@@ -2107,8 +2107,8 @@ material camera6screen5
+ 			texture_unit 3
+ 			{
+ 				// Rolling interference bars
+-				texture interference-bar.png 2d
+-				filtering linear linear none
++				// texture interference-bar.png 2d
++				// filtering linear linear none
+ 			}
+ 			texture_unit 4
+ 			{
+@@ -2163,8 +2163,8 @@ material camera6screen6
+ 			texture_unit 3
+ 			{
+ 				// Rolling interference bars
+-				texture interference-bar.png 2d
+-				filtering linear linear none
++				// texture interference-bar.png 2d
++				// filtering linear linear none
+ 			}
+ 			texture_unit 4
+ 			{
+-- 
+2.37.1.windows.1
+

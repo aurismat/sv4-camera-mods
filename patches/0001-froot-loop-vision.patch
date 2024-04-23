@@ -1,0 +1,218 @@
+diff --git a/Resources/Materials/Cameras.material b/Resources/Materials/Cameras.material
+index 6585c9c..eada5c5 100644
+--- a/Resources/Materials/Cameras.material
++++ b/Resources/Materials/Cameras.material
+@@ -169,8 +169,8 @@ material camera1screen1
+ 			texture_unit 0
+ 			{
+                                 // Noise modulation texture
+-				anim_texture noise.png 4 0.5
+-				filtering none
++				//anim_texture noise.png 4 0.5
++				//filtering none
+ 			}
+ 			texture_unit 1
+ 			{
+@@ -181,14 +181,14 @@ material camera1screen1
+ 			texture_unit 2
+ 			{
+                                 // Vignette down the modulation corners.
+-				texture vignette.png 2d
+-				filtering none
++				// texture vignette.png 2d
++				// filtering none
+ 			}
+ 			texture_unit 3
+ 			{
+ 				// Rolling interference bars
+-				texture interference-bar.png 2d
+-				filtering linear linear none
++				//texture interference-bar.png 2d
++				//filtering linear linear none
+ 			}
+ 			texture_unit 4
+ 			{
+@@ -225,8 +225,8 @@ material camera1screen2
+ 			texture_unit 0
+ 			{
+                                 // Noise modulation texture
+-				anim_texture noise.png 4 0.5
+-				filtering none
++				//anim_texture noise.png 4 0.5
++				//filtering none
+ 			}
+ 			texture_unit 1
+ 			{
+@@ -237,14 +237,14 @@ material camera1screen2
+ 			texture_unit 2
+ 			{
+                                 // Vignette down the modulation corners.
+-				texture vignette.png 2d
+-				filtering none
++				// texture vignette.png 2d
++				// filtering none
+ 			}
+ 			texture_unit 3
+ 			{
+ 				// Rolling interference bars
+-				texture interference-bar.png 2d
+-				filtering linear linear none
++				//texture interference-bar.png 2d
++				//filtering linear linear none
+ 			}
+ 			texture_unit 4
+ 			{
+@@ -287,8 +287,8 @@ material camera1screen3
+ 			texture_unit 0
+ 			{
+                                 // Noise modulation texture
+-				anim_texture noise.png 4 0.5
+-				filtering none
++				//anim_texture noise.png 4 0.5
++				//filtering none
+ 			}
+ 			texture_unit 1
+ 			{
+@@ -303,14 +303,14 @@ material camera1screen3
+ 			texture_unit 2
+ 			{
+                                 // Vignette down the modulation corners.
+-				texture vignette.png 2d
+-				filtering none
++				// texture vignette.png 2d
++				// filtering none
+ 			}
+ 			texture_unit 3
+ 			{
+ 				// Rolling interference bars
+-				texture interference-bar.png 2d
+-				filtering linear linear none
++				//texture interference-bar.png 2d
++				//filtering linear linear none
+ 			}
+ 			texture_unit 4
+ 			{
+@@ -347,8 +347,8 @@ material camera1screen4
+ 			texture_unit 0
+ 			{
+                                 // Noise modulation texture
+-				anim_texture noise.png 4 0.5
+-				filtering none
++				//anim_texture noise.png 4 0.5
++				//filtering none
+ 			}
+ 			texture_unit 1
+ 			{
+@@ -359,14 +359,14 @@ material camera1screen4
+ 			texture_unit 2
+ 			{
+                                 // Vignette down the modulation corners.
+-				texture vignette.png 2d
+-				filtering none
++				// texture vignette.png 2d
++				// filtering none
+ 			}
+ 			texture_unit 3
+ 			{
+ 				// Rolling interference bars
+-				texture interference-bar.png 2d
+-				filtering linear linear none
++				//texture interference-bar.png 2d
++				//filtering linear linear none
+ 			}
+ 			texture_unit 4
+ 			{
+@@ -403,8 +403,8 @@ material camera1screen5
+ 			texture_unit 0
+ 			{
+                                 // Noise modulation texture
+-				anim_texture noise.png 4 0.5
+-				filtering none
++				//anim_texture noise.png 4 0.5
++				//filtering none
+ 			}
+ 			texture_unit 1
+ 			{
+@@ -415,14 +415,14 @@ material camera1screen5
+ 			texture_unit 2
+ 			{
+                                 // Vignette down the modulation corners.
+-				texture vignette.png 2d
+-				filtering none
++				// texture vignette.png 2d
++				// filtering none
+ 			}
+ 			texture_unit 3
+ 			{
+ 				// Rolling interference bars
+-				texture interference-bar.png 2d
+-				filtering linear linear none
++				//texture interference-bar.png 2d
++				//filtering linear linear none
+ 			}
+ 			texture_unit 4
+ 			{
+@@ -460,8 +460,8 @@ material camera1screen6
+ 			texture_unit 0
+ 			{
+                                 // Noise modulation texture
+-				anim_texture noise.png 4 0.5
+-				filtering none
++				//anim_texture noise.png 4 0.5
++				//filtering none
+ 			}
+ 			texture_unit 1
+ 			{
+@@ -472,15 +472,15 @@ material camera1screen6
+ 			texture_unit 2
+ 			{
+                                 // Vignette down the modulation corners.
+-				texture vignette.png 2d
+-				filtering none
++				// texture vignette.png 2d
++				// filtering none
+ 			}
+ 
+ 			texture_unit 3
+ 			{
+ 				// Rolling interference bars
+-				texture interference-bar.png 2d
+-				filtering linear linear none
++				//texture interference-bar.png 2d
++				//filtering linear linear none
+ 			}
+ 			texture_unit 4
+ 			{
+diff --git a/Resources/Shaders/vidscreen-simple.cg b/Resources/Shaders/vidscreen-simple.cg
+index aedeea7..c04a4d7 100644
+--- a/Resources/Shaders/vidscreen-simple.cg
++++ b/Resources/Shaders/vidscreen-simple.cg
+@@ -11,7 +11,7 @@ void main_vidscreen_vp(
+ 		out float2 uv3		: TEXCOORD3,	// Vert scroll for interference
+ 		out float2 bcout		: TEXCOORD4,	// multiplexed bright/contrast
+ 		out float2 ihout		: TEXCOORD5,	// multiplexed interference/horizhold
+-		out float4 chanout	: COLOR0,		// which channel to use, RGB
++		out float4 chanout	: COLOR1,		// which channel to use, RGB
+ 
+ 		// Model Level Inputs
+ 		uniform float4x4 worldViewProj,
+@@ -48,8 +48,8 @@ void main_vidscreen_vp(
+ 
+ 	// uv2 pairs become a rapidly scrolling diagonal based on uv0
+ 	// *2 because we want the noise texture to have smaller dots.
+-	uv2.x = (texCoord0.x*3) + (timeindex*14);
+-	uv2.y = (texCoord0.y*3) + (timeindex*4.8);
++	uv2.x = (texCoord0.x*3);// + (timeindex*14);
++	uv2.y = (texCoord0.y*3);// + (timeindex*4.8);
+ 
+ 	// uv3 pairs become a slow vertical roll for interference
+ 	uv3.x = texCoord0.x*1.5+timeindex*10;
+@@ -119,6 +119,7 @@ void main_vidscreen_fp(
+ 	// Add the r,g,b channels, clamp to monitor-on or zero black.
+ 	
+ 	
+-	color = (tempcolor.r+tempcolor.g+tempcolor.b > .5) ? (phosScale*(1-channel.a))+(sourceColor*channel.a) : sourceColor*phosScale*channel.a;
++	//color = (tempcolor.r+tempcolor.g+tempcolor.b > .5) ? (phosScale*(1-channel.a))+(sourceColor*channel.a) : sourceColor*phosScale*channel.a;
++	color = sourceColor*phosScale*channel.a;
+ 	
+ }

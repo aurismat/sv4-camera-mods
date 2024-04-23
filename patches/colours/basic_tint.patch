@@ -1,0 +1,24 @@
+From 671361a017dfe23b13efa9f6b710b07b4cb83e22 Mon Sep 17 00:00:00 2001
+From: aurismat <aur.mat729@gmail.com>
+Date: Sun, 29 Oct 2023 16:56:11 +0200
+Subject: [PATCH] vidscreen: basic color tint
+
+---
+ Resources/Shaders/vidscreen-simple.cg | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/Resources/Shaders/vidscreen-simple.cg b/Resources/Shaders/vidscreen-simple.cg
+index aedeea7..abe2ff7 100644
+--- a/Resources/Shaders/vidscreen-simple.cg
++++ b/Resources/Shaders/vidscreen-simple.cg
+@@ -119,6 +119,6 @@ void main_vidscreen_fp(
+ 	// Add the r,g,b channels, clamp to monitor-on or zero black.
+ 	
+ 	
+-	color = (tempcolor.r+tempcolor.g+tempcolor.b > .5) ? (phosScale*(1-channel.a))+(sourceColor*channel.a) : sourceColor*phosScale*channel.a;
++	color = sourceColor.r * float4(float(255f/255f), float(191f/255f), float(0f/255f), 1f) * phosScale;
+ 	
+ }
+-- 
+2.37.1.windows.1
+

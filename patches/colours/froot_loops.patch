@@ -1,0 +1,33 @@
+From 3b1f9aefe5f090396855d0f7dc3a8b69a4cf96a2 Mon Sep 17 00:00:00 2001
+From: aurismat <aur.mat729@gmail.com>
+Date: Fri, 15 Dec 2023 20:08:44 +0200
+Subject: [PATCH] vidscreen-simple: froot loop vision
+
+---
+ Resources/Shaders/vidscreen-simple.cg | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/Resources/Shaders/vidscreen-simple.cg b/Resources/Shaders/vidscreen-simple.cg
+index aedeea7..a9b0e76 100644
+--- a/Resources/Shaders/vidscreen-simple.cg
++++ b/Resources/Shaders/vidscreen-simple.cg
+@@ -11,7 +11,7 @@ void main_vidscreen_vp(
+ 		out float2 uv3		: TEXCOORD3,	// Vert scroll for interference
+ 		out float2 bcout		: TEXCOORD4,	// multiplexed bright/contrast
+ 		out float2 ihout		: TEXCOORD5,	// multiplexed interference/horizhold
+-		out float4 chanout	: COLOR0,		// which channel to use, RGB
++		out float4 chanout	: COLOR1,		// which channel to use, RGB
+ 
+ 		// Model Level Inputs
+ 		uniform float4x4 worldViewProj,
+@@ -119,6 +119,6 @@ void main_vidscreen_fp(
+ 	// Add the r,g,b channels, clamp to monitor-on or zero black.
+ 	
+ 	
+-	color = (tempcolor.r+tempcolor.g+tempcolor.b > .5) ? (phosScale*(1-channel.a))+(sourceColor*channel.a) : sourceColor*phosScale*channel.a;
++	color = sourceColor*phosScale*channel.a;
+ 	
+ }
+-- 
+2.37.1.windows.1
+

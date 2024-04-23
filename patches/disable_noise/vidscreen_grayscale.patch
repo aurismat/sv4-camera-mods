@@ -1,0 +1,25 @@
+From 0453fd679e51c198592e06832a76a05f858993fe Mon Sep 17 00:00:00 2001
+From: aurismat <aur.mat729@gmail.com>
+Date: Sat, 28 Oct 2023 14:04:24 +0300
+Subject: [PATCH] vidscreen-simple.cg: basic tint to gray
+
+required to no noise patch
+---
+ Resources/Shaders/vidscreen-simple.cg | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+
+diff --git a/Resources/Shaders/vidscreen-simple.cg b/Resources/Shaders/vidscreen-simple.cg
+index aedeea7..1cd57f5 100644
+--- a/Resources/Shaders/vidscreen-simple.cg
++++ b/Resources/Shaders/vidscreen-simple.cg
+@@ -119,6 +119,5 @@ void main_vidscreen_fp(
+ 	// Add the r,g,b channels, clamp to monitor-on or zero black.
+ 	
+ 	
+-	color = (tempcolor.r+tempcolor.g+tempcolor.b > .5) ? (phosScale*(1-channel.a))+(sourceColor*channel.a) : sourceColor*phosScale*channel.a;
+-	
++	color = sourceColor.r*phosScale;
+ }
+-- 
+2.37.1.windows.1
+
